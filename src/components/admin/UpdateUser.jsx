@@ -36,11 +36,11 @@ const UpdateUser = () => {
                     />
                   </div>
 
-                  <div class="mb-4">
-                    <label class="block mb-1"> Role </label>
-                    <div class="relative">
+                  <div className="mb-4">
+                    <label className="block mb-1"> Role </label>
+                    <div className="relative">
                       <select
-                        class="block appearance-none border border-gray-200 bg-gray-100 rounded-md py-2 px-3 hover:border-gray-400 focus:outline-none focus:border-gray-400 w-full"
+                        className="block appearance-none border border-gray-200 bg-gray-100 rounded-md py-2 px-3 hover:border-gray-400 focus:outline-none focus:border-gray-400 w-full"
                         name="category"
                         required
                       >
@@ -50,11 +50,11 @@ const UpdateUser = () => {
                           </option>
                         ))}
                       </select>
-                      <i class="absolute inset-y-0 right-0 p-2 text-gray-400">
+                      <i className="absolute inset-y-0 right-0 p-2 text-gray-400">
                         <svg
                           width="22"
                           height="22"
-                          class="fill-current"
+                          className="fill-current"
                           viewBox="0 0 20 20"
                         >
                           <path d="M7 10l5 5 5-5H7z"></path>

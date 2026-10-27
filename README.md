@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# BuyItNow Component Showcase
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A forked React component showcase for storefront, account, cart, shipping and admin screens. The default branch contains static UI examples, not a commerce backend or a working checkout.
 
-## Available Scripts
+## Setup
 
-In the project directory, you can run:
+Use Node.js 24 and npm.
 
-### `npm start`
+```sh
+npm ci
+npm run dev
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open http://localhost:3000. `npm start` is an alias for the development server.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Checks and production build
 
-### `npm test`
+```sh
+npm test
+npm run build
+npm run audit
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Vite writes the production site to `dist/`. `npm run preview` serves that build locally. Configure the host to serve index.html for browser routes. This maintenance change does not deploy the application.
 
-### `npm run build`
+## Provenance
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Read [FORK_NOTES.md](FORK_NOTES.md) for upstream attribution and contribution limits. Existing upstream license notices are retained. No new license has been assigned.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Scope
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The route tests cover all 19 component pages and navigation to login. Tailwind styles are compiled locally rather than loaded from a development CDN. Forms and admin screens remain demonstrations; no user accounts, orders, payment service or database are connected. The default branch needs no environment variables.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Historical commits contain credentials from a different application. Real values must be reviewed and rotated by their service-account owners; removing current files does not revoke historical credentials.

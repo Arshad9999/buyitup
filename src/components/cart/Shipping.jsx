@@ -11,20 +11,20 @@ const Shipping = () => {
           <div className="flex flex-col md:flex-row gap-4 lg:gap-8">
             <main className="md:w-2/3">
               <article className="border border-gray-200 bg-white shadow-sm rounded p-4 lg:p-6 mb-5">
-                <h2 class="text-xl font-semibold mb-5">Shipping information</h2>
+                <h2 className="text-xl font-semibold mb-5">Shipping information</h2>
 
-                <div class="grid sm:grid-cols-2 gap-4 mb-6">
-                  <label class="flex p-3 border border-gray-200 rounded-md bg-gray-50 hover:border-blue-400 hover:bg-blue-50 cursor-pointer">
+                <div className="grid sm:grid-cols-2 gap-4 mb-6">
+                  <label className="flex p-3 border border-gray-200 rounded-md bg-gray-50 hover:border-blue-400 hover:bg-blue-50 cursor-pointer">
                     <span>
                       <input
                         name="shipping"
                         type="radio"
-                        class="h-4 w-4 mt-1"
+                        className="h-4 w-4 mt-1"
                       />
                     </span>
-                    <p class="ml-2">
+                    <p className="ml-2">
                       <span>1295 street</span>
-                      <small class="block text-sm text-gray-400">
+                      <small className="block text-sm text-gray-400">
                         Orlando, FL, 84753
                         <br />
                         US
@@ -75,25 +75,25 @@ const Shipping = () => {
 
                 <hr className="my-4" />
 
-                <h2 class="text-lg font-semibold mb-3">Items in cart</h2>
+                <h2 className="text-lg font-semibold mb-3">Items in cart</h2>
 
-                <figure class="flex items-center mb-4 leading-5">
+                <figure className="flex items-center mb-4 leading-5">
                   <div>
-                    <div class="block relative w-20 h-20 rounded p-1 border border-gray-200">
+                    <div className="block relative w-20 h-20 rounded p-1 border border-gray-200">
                       <img
                         width="50"
                         height="50"
                         src={"/logo192.png"}
                         alt="Title"
                       />
-                      <span class="absolute -top-2 -right-2 w-6 h-6 text-sm text-center flex items-center justify-center text-white bg-gray-400 rounded-full">
+                      <span className="absolute -top-2 -right-2 w-6 h-6 text-sm text-center flex items-center justify-center text-white bg-gray-400 rounded-full">
                         3
                       </span>
                     </div>
                   </div>
-                  <figcaption class="ml-3">
+                  <figcaption className="ml-3">
                     <p> product name</p>
-                    <p class="mt-1 text-gray-400">Total: $34</p>
+                    <p className="mt-1 text-gray-400">Total: $34</p>
                   </figcaption>
                 </figure>
               </article>
